@@ -11,7 +11,7 @@ body{margin:0;padding:0;font-family;arial;}
 	font-family: 'Lato';
 	src: url('Lato-Bold.ttf');
 }
-*{-moz-box-sizing:border-box;margin:0;padding:0;}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}
 a{text-decoration:none;outline:none;}
 ul,ul li{list-style:none;margin:0;padding:0}
 .wrapper{float:left;width:100%;}
