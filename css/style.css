@@ -150,3 +150,7 @@ nav ul li a:hover{background:#34383D;border-bottom:8px solid #F24971;padding-bot
 .main-nav{display:none;}
 .nav  p{color: #FFFFFF;float: left;padding: 18px;text-align: center;width: 12%;font-family:'VerelaRound';background:#F24971;cursor:pointer;font-size:20px;} 
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.com-range span{top: -17px;}
+.com-range span:before{top: 28px;}
+}
