@@ -38,8 +38,8 @@ span.brBtm{border-bottom: 10px solid #F24971;display: block;margin: 0 auto;paddi
 .col-rgt{float:right;width:45%;}
 .com-range{float:left;width:100%;position:relative;padding-bottom:30px;}
 .com-range p{border-bottom:8px solid #DADFE1;padding-bottom:10px;position:relative;top:-9px;font-family:'VerelaRound';}
-.com-range span{position:absolute;top:-19px;right:3%;background:#1D1D1D;padding:5px 20px 5px 20px;color:#fff;-moz-border-radius:5px}
-.com-range span:before{content:"";border-top:10px solid #1D1D1D;border-left:10px solid transparent;border-right:10px solid transparent;position:absolute;top:30px;left:25px}
+.com-range span{position:absolute;top:-19px;right:3%;background:#1D1D1D;padding:5px 20px 5px 20px;color:#fff;border-radius:5px;-moz-border-radius:5px}
+.com-range span:before{content:"";border-top:10px solid #1D1D1D;border-left:9px solid transparent;border-right:10px solid transparent;position:absolute;top:30px;left:25px}
 .linear{border:none !important;animation: myfun 5s infinite;-moz-animation: myfun 10s infinite;}
 @keyframes myfun{
 from{background:#F24971;position:relative;top:-18px;width:0%}
