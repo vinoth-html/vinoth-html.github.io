@@ -195,7 +195,6 @@ nav{width:53%}
 @media screen and (max-width:767px)
 {
 .cont-lft{width:100%}
-.cont-lft{width:100%;}
 .cont-img {width:100% !important;text-align:center}
 .cont-img  img{width:25%;text-align:center}
 .cont-img-lft {padding-top: 15px;width: 100%;}
