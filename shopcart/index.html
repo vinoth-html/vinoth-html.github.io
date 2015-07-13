@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ShopCart</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"/>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>		
+		<script src="js/script.js"></script>		
+	</head>
+	
+	<body>
+		 <nav class="navbar navbar-default bg clearfix">
+			<div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				 <ul class="nav navbar-nav navlft">
+					<li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
+					<li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
+					<li><a href="#"><i class="icon fa fa-key"></i>Checkout</a></li>
+					<li><a href="#"><i class="icon fa fa-sign-in"></i>Login</a></li>
+				 </ul>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">					  
+				  <ul class="nav navbar-nav navbar-right navrgt">
+					<li class="dropdown dropdown-small">
+					<a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle dropdwn" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+					<ul class="dropdown-menu martop">
+						<li><a href="#">USD</a></li>
+						<li><a href="#">INR</a></li>
+						<li><a href="#">GBP</a></li>
+					</ul>
+					</li>
+					<li class="dropdown dropdown-small padrgtnon">
+					<a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle dropdwn" href="#"><span class="key">Language :</span><span class="value">English </span><b class="caret"></b></a>
+					<ul class="dropdown-menu martop">
+						<li><a href="#">English</a></li>
+						<li><a href="#">French</a></li>
+						<li><a href="#">German</a></li>
+					</ul>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav> 
+
+		<section> 
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-12 logotxt">
+						ShopCart
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-12">
+							<div class="phone inline">
+								<i class="icon fa fa-phone"></i> (800) 666 666 666
+							</div>
+							<div class="contact inline">
+								<i class="icon fa fa-envelope"></i> <a href="mailto:sales@shopcart.com">sales@shopcart.com</a>
+							</div>
+							<div class="search-area">
+								<form>
+									<div class="control-group">
+										<ul class="categories-filter animate-dropdown">
+											<li class="dropdown">
+												<a href="#" data-toggle="dropdown" class="dropdown-toggle">Categories <b class="caret"></b></a>
+												<ul role="menu" class="dropdown-menu">
+													<li class="menu-header">Computer</li>
+													<li role="presentation"><a href="#" tabindex="-1" role="menuitem">- Laptops</a></li>
+													<li role="presentation"><a href="#" tabindex="-1" role="menuitem">- Tv &amp; audio</a></li>
+													<li role="presentation"><a href="#" tabindex="-1" role="menuitem">- Gadgets</a></li>
+													<li role="presentation"><a href="#" tabindex="-1" role="menuitem">- Cameras</a></li>
+
+												</ul>
+											</li>
+										</ul>
+										<input placeholder="Search here..." class="search-field">
+										<a href="#" class="search-button"><i class="fa fa-search"></i></a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3 animate-dropdown top-cart-row col-sm-12 col-xs-12">
+							<div class="dropdown dropdown-cart">
+								<a data-toggle="dropdown" class="dropdown-toggle lnk-cart" href="#">
+									<div class="items-cart-inner">
+										<div class="total-price-basket">
+											<span class="lbl">cart -</span>
+											<span class="total-price">
+												<span class="sign">$</span>
+												<span class="value1">0</span>
+											</span>
+										</div>
+										<div class="basket">
+											<i class="fa fa-shopping-cart"></i>
+										</div>
+										<div class="basket-item-count"><span class="count">0</span></div>									
+									</div>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="cart-item product-summary">
+											<div class="row">
+												<div class="col-xs-4">
+													<div class="image">
+														<a href="index.php?page=detail"><img alt="" src="assets/images/cart.jpg"></a>
+													</div>
+												</div>
+												<div class="col-xs-7">
+													
+													<h3 class="name"><a href="index.php?page-detail">Simple Product</a></h3>
+													<div class="price">$600.00</div>
+												</div>
+												<div class="col-xs-1 action">
+													<a href="#"><i class="fa fa-trash"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="clearfix cart-total">
+											<div class="pull-right">
+												<span class="text">Sub Total :</span><span class="price">$600.00</span>
+											</div>
+											<div class="clearfix"></div>
+											<a class="btn btn-upper btn-primary btn-block m-t-20" href="#">Checkout</a>	
+										</div>																			
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				<div class="header-nav animate-dropdown">
+					<div class="container">
+						<nav class="navbar navsec">
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							</div>
+							<div class="collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="active"><a href="#">HOME</a></li>
+								<li><a href="#">DESKTOP</a></li>
+								<li><a href="#">ELECTRONICS</a></li>
+								<li class="sr-only"><a href="#">TELEVISION</a></li>
+								<li><a href="#">SMARTPHONE</a></li>
+								<li><a href="#">CONTACT</a></li>
+							  </ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+			<div class="breadcrumb">
+				<div class="container">
+					<div class="breadcrumb-inner">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#">Home</a></li>
+							<li class="active">Smart Phone</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contsection">
+				<div class="container">
+					<div class="row">
+						<aside>
+							<div class="col-md-3">
+								<div class="side-menu">
+									<div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
+								</div>
+								<nav class="yamm megamenu-horizontal" role="navigation">
+									<ul class="nav"> 
+										<li><a href="#"><i class="icon fa fa-desktop fa-fw"></i>Computer</a></li>
+										<li><a href="#"><i class="icon fa fa-mobile fa-fw"></i>Smart Phone</a></li>
+										<li><a href="#"><i class="icon fa fa-apple fa-fw"></i>Apple Store</a></li>
+										<li><a href="#"><i class="icon fa fa-camera fa-fw"></i>Camera</a></li>
+										<li><a href="#"><i class="icon fa fa-headphones fa-fw"></i>TV &amp; Audio</a></li>
+									</ul>
+								</nav>
+							</div>
+						</aside>
+						<div class="col-md-9 padbtm">
+							<div class="image">
+								<img class="img-responsive" alt="" src="images/cat-banner-1.jpg">
+							</div>
+							<div class="clearfix gridcont">
+									<div class="row">
+										<div class="filtertabs col-md-5">
+											<ul class="list-inline list-unstyled">
+												<li id="grid-container"><i class="icon fa fa-th-list"></i>Grid</li>
+												<li id="grid-container1"><i class="icon fa fa-th-list"></i>List</li>
+											</ul>
+										</div>
+										<div class="filtertabs col-md-7">
+											<ul class="list-inline list-unstyled">
+												<li class="all">All</li>
+												<li>/</li>
+												<li class="nokia">Nokia</li>
+												<li>/</li>
+												<li class="samsung">Samsung</li>
+												<li>/</li>
+												<li class="apple">Apple</li>
+												<li>/</li>
+												<li class="sony">Sony</li>
+											</ul>
+										</div>
+									</div>
+							</div>
+								
+							<div class="mobilesec">
+								<div class="row">
+									<div class="col-md-4 col-sm-6 son">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c1.jpg">
+											<div class="tag new"><span>new</span></div>
+											<div class="contsec">
+												<h4>Sony Ericson Vaga</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 sam">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c2.jpg">
+											<div class="tag new sale"><span>sale</span></div>
+											<div class="contsec">
+												<h4>Samsung Galaxy S4</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 sam">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c3.jpg">
+											<div class="tag new hot"><span>hot</span></div>
+											<div class="contsec">
+												<h4>Samsung Galaxy S3</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 app">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c4.jpg">
+											<div class="tag new hot"><span>hot</span></div>
+											<div class="contsec">
+												<h4>Apple Iphone 5s 32GB</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 nok">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c5.jpg">
+											<div class="tag new sale"><span>sale</span></div>
+											<div class="contsec">
+												<h4>Nokia</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 nok">
+										<div class="imgsec">
+											<img class="img-responsive" alt="" src="images/c6.jpg">
+											<div class="tag new"><span>new</span></div>
+											<div class="contsec">
+												<h4>Nokia</h4>
+												<div class="str"></div>
+												<span class="price"> $650.99 </span>
+												<span class="price-before-discount">$ 800</span>
+											</div>
+										</div>
+										<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button type="button" data-toggle="dropdown" class="btn btn-primary icon">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button type="button" class="btn btn-primary addcart">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a title="Wishlist" href="#" class="add-to-cart">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a title="Compare" href="#" class="add-to-cart">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								<div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12 defn" style="display:none">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="productexp">
+									<img src="images/1.jpg" alt=""/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h4>Samsung Galaxy S4 32GB White</h4>
+								<div class="str"></div>
+								<div class="avail">
+									<div class="row">
+										<div class="col-md-3">
+											<span>Availability :</span>
+										</div>
+										<div class="col-md-9">
+											<span class="value">In Stock</span>
+										</div>
+									</div>
+								</div>
+								<div class="padtop"><p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p></div>
+								<div class="price-container info-container m-t-20">
+								<div class="row">
+									
+
+									<div class="col-sm-6">
+										<div class="price-box">
+											<span class="price">$650.99</span>
+											<span class="price-strike">$800.00</span>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="favorite-button m-t-10">
+											<a href="#" title="" data-placement="right" data-toggle="tooltip" class="btn btn-primary" data-original-title="Wishlist">
+											    <i class="fa fa-heart"></i>
+											</a>
+											<a href="#" title="" data-placement="right" data-toggle="tooltip" class="btn btn-primary" data-original-title="Add to Compare">
+											   <i class="fa fa-retweet"></i>
+											</a>
+											<a href="#" title="" data-placement="right" data-toggle="tooltip" class="btn btn-primary" data-original-title="E-mail">
+											    <i class="fa fa-envelope"></i>
+											</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="cart clearfix animate-effect">
+											<div class="action">
+												<ul class="list-unstyled">
+													<li class="add-cart-button btn-group">
+														<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+															<i class="fa fa-shopping-cart"></i>													
+														</button>
+														<button class="btn btn-primary addcart" type="button">Add to cart</button>
+																				
+													</li>
+												   
+													<li class="lnk wishlist">
+														<a class="add-to-cart" href="#" title="Wishlist">
+															 <i class="icon fa fa-heart"></i>
+														</a>
+													</li>
+
+													<li class="lnk">
+														<a class="add-to-cart" href="#" title="Compare">
+															<i class="fa fa-retweet"></i>
+														</a>
+													</li>
+													<li>
+														<p class="bckhome">Back to Home</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+							</div>
+							</div>
+						</div>						
+					</div>
+					
+					</div>
+
+					</div>
+					
+					
+				</div>
+			</div>
+			
+				<div class="slidersec">
+					<div class="container">
+						<ul class="bxslider">
+						  <li><img src="images/brand1.png" alt=""/></li>
+						  <li><img src="images/brand2.png" alt=""/></li>
+						  <li><img src="images/brand3.png" alt=""/></li>
+						  <li><img src="images/brand4.png" alt=""/></li>
+						  <li><img src="images/brand5.png" alt=""/></li>
+						  <li><img src="images/brand6.png" alt=""/></li>
+						  <li><img src="images/brand1.png" alt=""/></li>
+						  <li><img src="images/brand2.png" alt=""/></li>
+						  <li><img src="images/brand3.png" alt=""/></li>
+						  <li><img src="images/brand4.png" alt=""/></li>
+						  <li><img src="images/brand5.png" alt=""/></li>
+						  <li><img src="images/brand6.png" alt=""/></li>
+						</ul>
+					</div>
+				</div>
+			</section> 
+			
+			<footer>
+				<div class="copyright-bar">
+					<div class="container">
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<div class="copyright">
+							   Copyright &copy; 2015
+								<a href="#">ShopCart.</a>
+								- All rights Reserved
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 no-padding">
+							<div class="clearfix payment-methods">
+								<ul class="list-inline pull-right">
+									<li><a title="facebook" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
+									<li><a title="twitter" target="_blank" href="https://twitter.com/login?lang=en"><i class="fa fa-twitter fa-2x"></i></a></li>
+									<li><a title="linkedin" target="_blank" href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin fa-2x"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>		 
+	</body>
+</html>
