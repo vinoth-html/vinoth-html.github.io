@@ -71,4 +71,9 @@ function getCookie(cname) {
 		$('.defn').fadeOut(800);
 		$('.mobilesec').fadeIn(800);
 	});
+	
+	$(".add-cart-button .addcart").click(function(){
+		$(this).css("background","green");
+	});
+	
 	});
