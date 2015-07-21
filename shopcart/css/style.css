@@ -83,10 +83,10 @@ ul {list-style: outside none none;padding:0;margin:0}
 .fun .col-md-4{width:100%}
 .imgsec img{position:relative;}
 .clr{color:green}
-.bxslider li{width:180px !important;}
+ .bxslider li{width:180px !important;}
 .bxslider li img{width:130px !important;}
 .bx-viewport{height: 150px !important;padding: 45px;}
-.bxslider{width:314% !important}
+.bxslider{width:314% !important} 
 .productexp{border: 1px solid #e5e5e5;}
 .avail {padding-top: 9px;}
 .padtop p{padding-top:10px;}
