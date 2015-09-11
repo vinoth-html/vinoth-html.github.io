@@ -1,225 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>My Portfolio</title>
-		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
-		<script>
-		$(window).scroll(function() {
-			navScroll();
-		});
-		function navScroll(){
-			var top = $(window).scrollTop();
-		if (top > 3) {
-			$('.main-nav').fadeIn();
-		}else {
-			$('.main-nav').fadeOut();
-			}
-		}
-		$(document).ready(function(){
-			$('.edmFilter').click(function(){
-				$('.galery-sec a').not('.edm').fadeOut(800);
-					$('.edm').fadeIn(800);
-				});
-				$('.htmlFilter').click(function(){
-					$('.galery-sec a').not('.html').fadeOut(800);
-					$('.html').fadeIn(800);
-				});
-				$('.allFilter').click(function(){
-					$('.galery-sec a').fadeIn(800);
-				});
-				$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-					scrollTop: target.offset().top
-					}, 1000);
-					return false;
-					}
-					}
-				});
-				$('.nav a').click(function(){
-				$('nav a').removeClass('active');
-					$(this).addClass('active');	
-				});
-				$('.nav p').click(function(){
-					$('html,body').animate({scrollTop:0});
-				});
-				});
-				function re()
-				{
-					$('html,body').animate({scrollTop:0},800);
-				}
-		</script>
-		
-	</head>
-	<body onload="re();">
-		<div class="wrapper">
-			<div class="nav-cont main-nav">
-				<div class="nav navbar-nav">
-					<p>Vinothkumar</p>
-						<div id="sidebar">
-						<div id="nav-anchor"></div>
-							<nav>
-								<ul>
-									<li><a href="#about">Home</a></li>
-									<li><a href="#aboutMe">About</a></li>
-									<li><a href="#gallery">Work</a></li>
-									<li><a href="#touch">Contact</a></li>
-								</ul>
-							</nav>
-						</div>
-				</div>
-			</div>
-			<div id="about" class="header">
-				<div class="ptBg"></div>
-				<div class="abt-cont">
-					<h1>Hi</h1>
-					<p>Welcome</p>
-					<a href="#aboutMe" class="btn">Read more</a>
-				</div>
-			</div>
-			<div id="aboutMe" class="aboutMe">
-				<h2>About Me</h2>
-				<span class="brBtm"></span>
-					<div class="abtMe-cont">
-						<div class="cont-lft">
-							<div class="cont-img">
-								<img src="img/avatar.jpg" alt="" title=""/>
-							</div>
-							<div class="cont-img-lft">
-								<p>Hello, I'm Vinothkumar a front end developer. I Love designing and developing websites as much I love to traveling. I have been working in the field for 1.11 years & would Love to help you take your product to the next level.</p>
-								<a href="#touch" class="btn hire not-active">Available to hire</a>
-							</div>
-						</div>
-						<div class="col-rgt">
-							<div class="com-range">
-								<p>HTML & CSS</p>
-								<p class="linear"></p>
-								<span class="linearTxt">95%</span>
-							</div>
-							<div class="com-range">
-								<p>JavaScript</p>
-								<p class="linear linearJava"></p>
-								<span class="linearTxt linearRgt">60%</span>
-							</div>
-							<div class="com-range">
-								<p>Jquery</p>
-								<p class="linear linearJquery"></p>
-								<span class="linearTxt linearRgtJqu">80%</span>
-							</div>
-							<div class="com-range">
-								<p>Bootstrap</p>
-								<p class="linear linearJquery"></p>
-								<span class="linearTxt linearRgtJqu">80%</span>
-							</div>
-							<div class="com-range">
-								<p>Photoshop</p>
-								<p class="linear linearBoot"></p>
-								<span class="linearTxt linearRgtboot">40%</span>
-							</div>
-						</div>
-					</div>
-			</div>
-				<div id="gallery" class="gallery">
-					<h2>Latest Works</h2>
-					<span class="brBtm"></span>
-					<div class="gallFilter">
-						<ul>
-							<li class="allFilter">All</li>
-							<li class="edmFilter">EDM</li>
-							<li class="htmlFilter">HTML</li>
-						</ul>
-					</div>
-					<div class="galery-sec">
-						<a href="img/edm_1.jpg" class="edm" target="_blank"><img src="img/edm_01.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_1.jpg" class="html" target="_blank"><img src="img/landingpage_01.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_2.jpg" class="edm" target="_blank"><img src="img/edm_02.png" alt="" title=""/></a>
-						
-						
-						<a href="img/landingpage_2.jpg" class="html" target="_blank"><img src="img/landingpage_02.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_3.jpg" class="edm" target="_blank"><img src="img/edm_03.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_3.jpg" class="html" target="_blank"><img src="img/landingpage_03.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_4.jpg" class="edm" target="_blank"><img src="img/edm_04.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_4.jpg" class="html" target="_blank"><img src="img/landingpage_04.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_5.jpg" class="edm" target="_blank"><img src="img/edm_05.png" alt="" title=""/></a>
-
-						<a href="img/landingpage_5.jpg" class="html" target="_blank"><img src="img/landingpage_05.png" alt="" title=""/></a>
-						<a href="img/landingpage_6.jpg" class="html" target="_blank"><img src="img/landingpage_06.png" alt="" title=""/></a>						
-						
-						<a href="img/edm_6.jpg" class="edm" target="_blank"><img src="img/edm_06.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_7.jpg" class="html" target="_blank"><img src="img/landingpage_07.png" alt="" title=""/></a>
-						<a href="img/landingpage_8.jpg" class="html" target="_blank"><img src="img/landingpage_08.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_7.jpg" class="edm" target="_blank"><img src="img/edm_07.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_9.jpg" class="html" target="_blank"><img src="img/landingpage_09.png" alt="" title=""/></a>
-						<a href="img/landingpage_10.jpg" class="html" target="_blank"><img src="img/landingpage_10.png" alt="" title=""/></a>
-						
-						
-						<a href="img/edm_8.jpg" class="edm" target="_blank"><img src="img/edm_08.png" alt="" title=""/></a>
-						
-						<a href="img/landingpage_11.jpg" class="html" target="_blank"><img src="img/landingpage_11.png" alt="" title=""/></a>
-						<a href="img/landingpage_12.jpg" class="html" target="_blank"><img src="img/landingpage_12.png" alt="" title=""/></a>
-						<a href="img/landingpage_13.jpg" class="html" target="_blank"><img src="img/landingpage_13.png" alt="" title=""/></a>
-
-					</div>
-				</div>
-			 <div class="touch" id="touch">
-				<h2>Get In Touch</h2>
-				<span class="brBtm"></span>
-				<div class="infoCont">
-					<div class="secInfo">
-						<span class="fa fa-map-marker"></span>
-						<p>M.M.D.A, Chennai</p>
-					</div>
-					
-					<div class="secInfo">
-						<span class="fa fa-phone"></span>
-						<p>tel: 9042425403</p>
-					</div>
-					<div class="secInfo dev">
-						<span class="fa fa-envelope"></span>
-						<p>vinothkumar.sambandan@gmail.com</p>
-					</div>
-					<div class="secInfo">
-						<a href="vinoth_new.doc"><span class="fa fa-file-text-o"></span></a>
-						<p>Click here to download</p>
-					</div>
-				</div>
-				<div class="footer">
-					<div class="foot-wrap">
-						<p>&copy; 2015. All Rights Reversed.</p>
-						<div class="social-icon">
-							<ul>
-								<li><a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook fa-2x"></i></a></li>
-								<li><a href="https://twitter.com/login?lang=en" target="_blank" title="twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li><a href="https://www.linkedin.com/uas/login" target="_blank" title="linkedin"><i class="fa fa-linkedin fa-2x"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</div>
-	</body>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel=stylesheet href="css/style.css"/>
+<link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>$(window).scroll(function(){navScroll();});function navScroll(){var top=$(window).scrollTop();if(top>3){$('.main-nav').fadeIn();}else{$('.main-nav').fadeOut();}}
+$(document).ready(function(){$('.edmFilter').click(function(){$('.galery-sec a').not('.edm').fadeOut(800);$('.edm').fadeIn(800);});$('.htmlFilter').click(function(){$('.galery-sec a').not('.html').fadeOut(800);$('.html').fadeIn(800);});$('.allFilter').click(function(){$('.galery-sec a').fadeIn(800);});$('a[href*=#]:not([href=#])').click(function(){if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){var target=$(this.hash);target=target.length?target:$('[name='+this.hash.slice(1)+']');if(target.length){$('html,body').animate({scrollTop:target.offset().top},1000);return false;}}});$('.nav a').click(function(){$('nav a').removeClass('active');$(this).addClass('active');});$('.nav p').click(function(){$('html,body').animate({scrollTop:0});});});function re()
+{$('html,body').animate({scrollTop:0},800);}</script>
+</head>
+<body onload="re();">
+<div class=wrapper>
+<div class="nav-cont main-nav">
+<div class="nav navbar-nav">
+<p>Vinothkumar</p>
+<div id=sidebar>
+<div id=nav-anchor></div>
+<nav>
+<ul>
+<li><a href="#about">Home</a></li>
+<li><a href="#aboutMe">About</a></li>
+<li><a href="#gallery">Work</a></li>
+<li><a href="#touch">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id=about class=header>
+<div class=ptBg></div>
+<div class=abt-cont>
+<h1>Hi</h1>
+<p>Welcome</p>
+<a href="#aboutMe" class=btn>Read more</a>
+</div>
+</div>
+<div id=aboutMe class=aboutMe>
+<h2>About Me</h2>
+<span class=brBtm></span>
+<div class=abtMe-cont>
+<div class=cont-lft>
+<div class=cont-img>
+<img src="img/avatar.jpg" alt="" title=""/>
+</div>
+<div class=cont-img-lft>
+<p>Hello, I'm Vinothkumar a front end developer. I Love designing and developing websites as much I love to traveling. I have been working in the field for 1.11 years & would Love to help you take your product to the next level.</p>
+<a href="#touch" class="btn hire not-active">Available to hire</a>
+</div>
+</div>
+<div class=col-rgt>
+<div class=com-range>
+<p>HTML & CSS</p>
+<p class=linear></p>
+<span class=linearTxt>95%</span>
+</div>
+<div class=com-range>
+<p>JavaScript</p>
+<p class="linear linearJava"></p>
+<span class="linearTxt linearRgt">60%</span>
+</div>
+<div class=com-range>
+<p>Jquery</p>
+<p class="linear linearJquery"></p>
+<span class="linearTxt linearRgtJqu">80%</span>
+</div>
+<div class=com-range>
+<p>Bootstrap</p>
+<p class="linear linearJquery"></p>
+<span class="linearTxt linearRgtJqu">80%</span>
+</div>
+<div class=com-range>
+<p>Photoshop</p>
+<p class="linear linearBoot"></p>
+<span class="linearTxt linearRgtboot">40%</span>
+</div>
+</div>
+</div>
+</div>
+<div id=gallery class=gallery>
+<h2>Latest Works</h2>
+<span class=brBtm></span>
+<div class=gallFilter>
+<ul>
+<li class=allFilter>All</li>
+<li class=edmFilter>EDM</li>
+<li class=htmlFilter>HTML</li>
+</ul>
+</div>
+<div class=galery-sec>
+<a href="img/edm_1.jpg" class=edm target=_blank><img src="img/edm_01.png" alt="" title=""/></a>
+<a href="img/landingpage_1.jpg" class=html target=_blank><img src="img/landingpage_01.png" alt="" title=""/></a>
+<a href="img/edm_2.jpg" class=edm target=_blank><img src="img/edm_02.png" alt="" title=""/></a>
+<a href="img/landingpage_2.jpg" class=html target=_blank><img src="img/landingpage_02.png" alt="" title=""/></a>
+<a href="img/edm_3.jpg" class=edm target=_blank><img src="img/edm_03.png" alt="" title=""/></a>
+<a href="img/landingpage_3.jpg" class=html target=_blank><img src="img/landingpage_03.png" alt="" title=""/></a>
+<a href="img/edm_4.jpg" class=edm target=_blank><img src="img/edm_04.png" alt="" title=""/></a>
+<a href="img/landingpage_4.jpg" class=html target=_blank><img src="img/landingpage_04.png" alt="" title=""/></a>
+<a href="img/edm_5.jpg" class=edm target=_blank><img src="img/edm_05.png" alt="" title=""/></a>
+<a href="img/landingpage_5.jpg" class=html target=_blank><img src="img/landingpage_05.png" alt="" title=""/></a>
+<a href="img/landingpage_6.jpg" class=html target=_blank><img src="img/landingpage_06.png" alt="" title=""/></a>
+<a href="img/edm_6.jpg" class=edm target=_blank><img src="img/edm_06.png" alt="" title=""/></a>
+<a href="img/landingpage_7.jpg" class=html target=_blank><img src="img/landingpage_07.png" alt="" title=""/></a>
+<a href="img/landingpage_8.jpg" class=html target=_blank><img src="img/landingpage_08.png" alt="" title=""/></a>
+<a href="img/edm_7.jpg" class=edm target=_blank><img src="img/edm_07.png" alt="" title=""/></a>
+<a href="img/landingpage_9.jpg" class=html target=_blank><img src="img/landingpage_09.png" alt="" title=""/></a>
+<a href="img/landingpage_10.jpg" class=html target=_blank><img src="img/landingpage_10.png" alt="" title=""/></a>
+<a href="img/edm_8.jpg" class=edm target=_blank><img src="img/edm_08.png" alt="" title=""/></a>
+<a href="img/landingpage_11.jpg" class=html target=_blank><img src="img/landingpage_11.png" alt="" title=""/></a>
+<a href="img/landingpage_12.jpg" class=html target=_blank><img src="img/landingpage_12.png" alt="" title=""/></a>
+<a href="img/landingpage_13.jpg" class=html target=_blank><img src="img/landingpage_13.png" alt="" title=""/></a>
+</div>
+</div>
+<div class=touch id=touch>
+<h2>Get In Touch</h2>
+<span class=brBtm></span>
+<div class=infoCont>
+<div class=secInfo>
+<span class="fa fa-map-marker"></span>
+<p>M.M.D.A, Chennai</p>
+</div>
+<div class=secInfo>
+<span class="fa fa-phone"></span>
+<p>tel: 9042425403</p>
+</div>
+<div class="secInfo dev">
+<span class="fa fa-envelope"></span>
+<p>vinothkumar.sambandan@gmail.com</p>
+</div>
+<div class=secInfo>
+<a href=vinoth_new.doc><span class="fa fa-file-text-o"></span></a>
+<p>Click here to download</p>
+</div>
+</div>
+<div class=footer>
+<div class=foot-wrap>
+<p>&copy; 2015. All Rights Reversed.</p>
+<div class=social-icon>
+<ul>
+<li><a href="https://www.facebook.com/" target=_blank title=facebook><i class="fa fa-facebook fa-2x"></i></a></li>
+<li><a href="https://twitter.com/login?lang=en" target=_blank title=twitter><i class="fa fa-twitter fa-2x"></i></a></li>
+<li><a href="https://www.linkedin.com/uas/login" target=_blank title=linkedin><i class="fa fa-linkedin fa-2x"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
