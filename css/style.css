@@ -12,17 +12,17 @@ ul,ul li{list-style:none;margin:0;padding:0}
 .abt-cont{float:left;width:100%;position:absolute;top:50%;text-align:center;margin-top:-120px}
 .abt-cont h1{font-size:36px;color:#fff;margin:0 0 10px 0;font-family:'Lato';}
 .abt-cont p{color:#FFFFFF;font-size:19px;margin:0 0 30px;text-align:center;font-family:'VerelaRound';}
-.btn{text-decoration:none;color:#F24971;padding:14px 24px;border:5px solid #F24971;outline:none;text-transform:uppercase;border-radius:10px;transition:all 200ms linear;-moz-transition:all 200ms linear;font-weight:bold;font-family:'VerelaRound';}
-.btn:hover{background:#F24971;color:#FFF;transition:all 200ms linear;-moz-transition:all 200ms linear;}
+.btn{text-decoration:none;color:#F27935;padding:14px 24px;border:5px solid #F27935;outline:none;text-transform:uppercase;border-radius:10px;transition:all 200ms linear;-moz-transition:all 200ms linear;font-weight:bold;font-family:'VerelaRound';}
+.btn:hover{background:#F27935;color:#FFF;transition:all 200ms linear;-moz-transition:all 200ms linear;}
 .aboutMe{float:left;width:100%;height:100%;position:relative;}
 .aboutMe h2{color:#333;font-size:36px;text-align:center;font-weight:bold;padding:10% 0 0 0;font-family:'Lato';}
-span.brBtm{border-bottom:10px solid #F24971;display:block;margin:0 auto;padding-top:10px;width:4%;}
+span.brBtm{border-bottom:10px solid #F27935;display:block;margin:0 auto;padding-top:10px;width:4%;}
 .abtMe-cont{float:left;width:100%;padding:5% 15% 5% 15%;}
 .cont-lft{float:left;width:50%;}
 .cont-lft .cont-img{float:left;width:30%}
 .cont-img-lft{float:left;width:70%}
 .cont-img-lft p{font-size:16px;line-height:20px;margin-bottom:50px;text-align:justify;font-family:'VerelaRound';}
-.cont-img-lft a.btn{color:#F24971;font-family:'Lato';}
+.cont-img-lft a.btn{color:#F27935;font-family:'Lato';}
 .cont-img-lft a.btn:hover{color:#fff}
 .col-rgt{float:right;width:45%;}
 .com-range{float:left;width:100%;position:relative;padding-bottom:30px;}
@@ -30,25 +30,25 @@ span.brBtm{border-bottom:10px solid #F24971;display:block;margin:0 auto;padding-
 .com-range span{position:absolute;top:-19px;right:3%;background:#1D1D1D;padding:5px 20px 5px 20px;color:#fff;border-radius:5px;-moz-border-radius:5px}
 .com-range span:before{content:"";border-top:10px solid #1D1D1D;border-left:9px solid transparent;border-right:10px solid transparent;position:absolute;top:30px;left:25px}
 .linear{border:none !important;animation:myfun 5s infinite;-moz-animation:myfun 10s infinite;-webkit-animation:myfun 10s infinite;}
-@keyframes myfun{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:89%}}
-@-moz-keyframes myfun{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:89%}}
-@-webkit-keyframes myfun{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:89%}}
+@keyframes myfun{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:89%}}
+@-moz-keyframes myfun{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:89%}}
+@-webkit-keyframes myfun{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:89%}}
 .linearJava{animation:myfun1 10s infinite;-moz-animation:myfun1 10s infinite;-webkit-animation:myfun1 10s infinite;}
-@keyframes myfun1{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:60%}}
-@-moz-keyframes myfun1{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:60%}}
-@-webkit-keyframes myfun1{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:60%}}
+@keyframes myfun1{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:##F2784B;position:relative;top:-18px;width:60%}}
+@-moz-keyframes myfun1{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:60%}}
+@-webkit-keyframes myfun1{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:60%}}
 .linearTxt.linearRgt{right:32%}
 .linearJquery{animation:myfun2 10s infinite;-moz-animation:myfun2 10s infinite;-webkit-animation:myfun2 10s infinite;}
-@keyframes myfun2{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:80%}}
-@-moz-keyframes myfun2{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:80%}}
-@-webkit-keyframes myfun2{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:80%}}
+@keyframes myfun2{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:80%}}
+@-moz-keyframes myfun2{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:80%}}
+@-webkit-keyframes myfun2{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:80%}}
 .linearTxt.linearRgtJqu{right:12%}
 .linearBoot{animation:myfun3 10s infinite;-moz-animation:myfun3 10s infinite;-webkit-animation:myfun3 10s infinite;}
-@keyframes myfun3{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:40%}}
-@-moz-keyframes myfun3{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:40%}}
-@-webkit-keyframes myfun3{from{background:#F24971;position:relative;top:-18px;width:0%}to{background:#F24971;position:relative;top:-18px;width:40%}}
+@keyframes myfun3{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:40%}}
+@-moz-keyframes myfun3{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:40%}}
+@-webkit-keyframes myfun3{from{background:#F2784B;position:relative;top:-18px;width:0%}to{background:#F2784B;position:relative;top:-18px;width:40%}}
 .linearTxt.linearRgtboot{right:52%}
-.cont-img img{border-radius:50%;-moz-border-radius:50%;border:1px solid #d1d1d1;padding:5px;width:130px}
+.cont-img img{border-radius:50%;-moz-border-radius:50%;border:1px solid #d1d1d1;padding:5px;width:130px;box-shadow: 0 0 10px #888;}
 .gallery{float:left;width:100%;height:100%;position:relative;}
 .gallery h2{color:#333;font-size:36px;text-align:center;font-weight:bold;padding:10% 0 0 0;font-family:'Lato';}
 .gallFilter{float:left;width:100%;padding:0 15%;}
@@ -69,15 +69,15 @@ span.brBtm{border-bottom:10px solid #F24971;display:block;margin:0 auto;padding-
 .foot-wrap p{color:#fff;float:left;width:45%;font-family:'VerelaRound';}
 .social-icon{float:right;width:24%;}
 .social-icon ul li{float:left;margin-right:25px;width:auto;}
-.social-icon ul li a i{color:#F24971}
+.social-icon ul li a i{color:#F27935}
 .social-icon ul li a i:hover{color:#7A7A7A}
-.nav-cont{position:fixed;float:left;width:100%;background:#1D2127;z-index:9999}
+.nav-cont{position:fixed;float:left;width:100%;background:#1D2127;z-index:9999;box-shadow: 0 2px 5px #888888;}
 .nav{position:relative;z-index:1;}
 nav{float:right;width:40%}
 nav ul li a{color:#fff;float:left;width:25%;text-align:center;padding:20px;font-family:'VerelaRound';}
-nav ul li a:hover{background:#34383D;border-bottom:8px solid #F24971;padding-bottom:12px;}
+nav ul li a:hover{background:#34383D;border-bottom:8px solid #F2784B;padding-bottom:12px;}
 .main-nav{display:none;}
-.nav p{color:#FFFFFF;float:left;padding:18px;text-align:center;width:15%;font-family:'VerelaRound';background:#F24971;cursor:pointer;font-size:20px;}
+.nav p{color:#FFFFFF;float:left;padding:18px;text-align:center;width:15%;font-family:'VerelaRound';background:#F27935;cursor:pointer;font-size:20px;}
 .not-active{pointer-events:none;cursor:default;}
 @media screen and (-webkit-min-device-pixel-ratio:0){.com-range span{top:-17px;}.com-range span:before{top:28px;}}
 @media only screen and (min-width:600px) and (max-width:1023px){.nav.navbar-nav p{padding:3%;width:auto;}
