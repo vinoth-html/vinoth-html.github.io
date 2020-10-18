@@ -153,20 +153,4 @@
     aos_init();
   });
 
-  $(document).ready(function() {
-    $("#content").hide();   
-    $("#overlay").show();    
-  });
-
-  $(window).on('load', function() {
-
-    setTimeout(function(){ 
-      $("#overlay").fadeOut(1000, function() {
-        $("#content").fadeIn(1000);        
-    });
-    }, 3000);
-   
-});
-
-
 })(jQuery);
