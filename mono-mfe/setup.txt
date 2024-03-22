@@ -1,0 +1,22 @@
+ng new mono-workspace --create-application=false
+cd mono-workspace
+ng g application host-app --routing --style=scss --no-standalone
+ng g application mfe-app --routing --style=scss --no-standalone
+
+ng s host-app -o
+ng s mfe-app -o
+
+npm install webpack webpack-cli --save-dev //webpack add
+
+ng add @angular-architects/module-federation --project host-app --port 4200 //module federation add
+
+ng add @angular-architects/module-federation --project mfe-app --port 4300 //module federation add
+
+ng g c home --project=host-app --no-standalone
+ng g c todo-list --project=host-app --no-standalone
+
+ng g module todo-list --project=mfe-app
+ng g c todo-list --project=mfe-app --no-standalone
+
+MONO-mfe
+https://github.com/amarkumarram/
