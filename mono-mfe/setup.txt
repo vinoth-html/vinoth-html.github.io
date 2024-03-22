@@ -19,4 +19,3 @@ ng g module todo-list --project=mfe-app
 ng g c todo-list --project=mfe-app --no-standalone
 
 MONO-mfe
-https://github.com/amarkumarram/
